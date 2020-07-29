@@ -32,6 +32,12 @@ a {
     max-width: 1130px;
     width: 100%;
     padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container.container--small {
+    max-width: 440px;
+    padding-top: 65px;
 }
 
 .header {
@@ -134,6 +140,121 @@ a {
     height: 100vh;
 }
 
+.section__title {
+    font-size: 18px;
+    color: #353738;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.section__text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #848789;
+    line-height: 1.889;
+    text-align: center;
+}
+
+.section__text.section--small {
+    margin: 5px 0 80px;
+    font-size: 16px;
+    color: #848789;
+    line-height: 1.875;
+    text-align: left;
+}
+
+.section__icon {
+    margin-bottom: 30px;
+}
+
+.section__icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.generation {
+    padding: 115px 0 140px;
+    background-color: #f7f7f7;
+}
+
+.brands-row {
+    display: flex;
+    max-height: 600px;
+    height: auto;
+    overflow: hidden;
+}
+
+.col--large {
+    width: 66.66666%;
+}
+
+.col--small {
+    width: 33.333333%;
+}
+
+.col__img {
+    display: flex;
+    align-self: end;
+}
+
+.brands__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.brands__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.col--large.first {
+    background: #ccc url("../img/brands-img/1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.col--large.second {
+    background: #ccc url("../img/brands-img/4.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.col--small.first {
+    background: #ccc url("../img/brands-img/5.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.col--small.second {
+    background: #ccc url("../img/brands-img/7.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .section__title {
+        font-size: 16px;
+        line-height: 1.15;
+        margin-bottom: 10px;
+    }
+
+    .section__text {
+        font-size: 16px;
+    }
+
+    .section__icon {
+        margin-bottom: 15px;
+    }
+
+    .generation {
+        padding: 30px 0 40px;
+    }
+}
+
 @media (max-width: 768px) {
     .header.mobile {
         transition: background-color 0.2s linear;
@@ -161,5 +282,13 @@ a {
         color: #f1f4f9;
         padding: 20px 0 !important;
         font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 14px;
+    }
+
+    .section__text {
+        font-size: 14px;
     }
 }
