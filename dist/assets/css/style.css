@@ -35,9 +35,25 @@ a {
     margin: 0 auto;
 }
 
-.container.container--small {
+.container--small {
     max-width: 440px;
     padding-top: 65px;
+    position: relative;
+}
+
+.container--small:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -15px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff;
 }
 
 .header {
@@ -157,12 +173,21 @@ a {
     text-align: center;
 }
 
-.section__text.section--small {
+.section--small.section__text {
     margin: 5px 0 80px;
     font-size: 16px;
     color: #848789;
     line-height: 1.875;
     text-align: left;
+}
+
+.section--small.section__text:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 35px auto;
+    background-color: #d7d7d7;
 }
 
 .section__icon {
@@ -181,7 +206,6 @@ a {
 
 .brands-row {
     display: flex;
-    max-height: 600px;
     height: auto;
     overflow: hidden;
 }
@@ -194,9 +218,17 @@ a {
     width: 33.333333%;
 }
 
-.col__img {
+.col--small.text {
     display: flex;
-    align-self: end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col__img {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    position: relative;
 }
 
 .brands__logo {
@@ -207,31 +239,11 @@ a {
 }
 
 .brands__img {
-    max-width: 100%;
-    height: auto;
-}
-
-.col--large.first {
-    background: #ccc url("../img/brands-img/1.jpg") center no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.col--large.second {
-    background: #ccc url("../img/brands-img/4.jpg") center no-repeat;
-    background-size: cover;
-    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .col--small.first {
-    background: #ccc url("../img/brands-img/5.jpg") center no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.col--small.second {
-    background: #ccc url("../img/brands-img/7.jpg") center no-repeat;
-    background-size: cover;
     position: relative;
 }
 
@@ -252,6 +264,31 @@ a {
 
     .generation {
         padding: 30px 0 40px;
+    }
+}
+
+@media (max-width: 890px) {
+    .section__text.section--small {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .brands-row {
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .brands-row:nth-child(2) .col--large {
+        order: -1;
+    }
+
+    .brands-row:nth-child(3) .col--small.text {
+        order: -1;
+    }
+
+    .col--large,
+  .col--small {
+        width: 100%;
     }
 }
 
