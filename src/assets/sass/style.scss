@@ -1,0 +1,58 @@
+/* Default styles */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 5000px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.visually-hidden {
+    font-size: 0;
+    display : none;
+    color: transparent;
+}
+
+.container {
+    max-width: 1130px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display : flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav__link {
+    font-size: 13px;
+    color: rgb(77, 73, 89);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.intro {
+    width: 100%;
+    background: #ccc url("../img/introbg.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
