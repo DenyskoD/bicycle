@@ -44,10 +44,22 @@ $(function() {
         nav.removeClass("show");
     
         $("html, body").animate({
-        scrollTop: elementsOffset - 50
+        scrollTop: elementsOffset - 95
         }, 700);
     
     });
+
+    // reviews -> https://kenwheeler.github.io/slick/
+    let slider = $("#reviewsSlider");
+
+    slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+      });
     
 
 });

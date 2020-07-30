@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
     <body>
 
@@ -15,7 +17,7 @@
             <nav class="nav" id="nav">
                 <a href="#" class="nav__link" data-scroll="#generation">about us</a>
                 <a href="#" class="nav__link" data-scroll="#brands">work</a>
-                <a href="#" class="nav__link" data-scroll="#generation">shop</a>
+                <a href="#" class="nav__link" data-scroll="#shop">shop</a>
                 <a href="#" class="nav__link" data-scroll="#generation">contact</a>
             </nav>
             <a class="home__link" href="#"> <img class="header__logo" src="assets/img/Logo.png" alt="logo" ></a>
@@ -125,8 +127,156 @@
         </section> <!-- /brands -->
 
 
+        <section class="section reviews">
+            <div class="container">
+                <div id="reviewsSlider">
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD New York<span class="author__name">@aod</span> <span class="reviews__time">/ 35 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD New York<span class="author__name">@frank</span> <span class="reviews__time">/ 45 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis.</p>
+                        </div>
+                    </div>
+
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD Konstantunovka<span class="author__name">@alexey</span> <span class="reviews__time">/ 49 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla  </p>
+                        </div>
+                    </div>
+
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD Novuy Bug<span class="author__name">@anime</span> <span class="reviews__time">/ 54 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <section class="section shop" id="shop">
+        <!-- first col -->
+            <div class="shop__cols">
+                <div class="shop__col">
+                    <div class="shop__row">
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/1.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/2.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="shop__row">
+                        <div class="shop__item long">
+                            <img class="shop__img" src="assets/img/shop/3.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                </div>     
+                <!-- second col -->       
+
+                <div class="shop__col hight--items">
+                        <div class="shop__item hight">
+                            <img class="shop__img" src="assets/img/shop/4.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    
+                        <div class="shop__item hight">
+                            <img class="shop__img" src="assets/img/shop/5.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                </div> 
+                <!-- third col -->        
+
+                <div class="shop__col">
+                    <div class="shop__row">
+                        <div class="shop__item long">
+                            <img class="shop__img" src="assets/img/shop/6.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="shop__row">
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/7.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/8.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                </div> 
+            </div>    
+            <div class="shop__store">
+                <a class="store__link" href="#">Discover the shop</a>
+            </div>          
+        </section>
+                              
         
 
 
@@ -135,6 +285,7 @@
 
 
         <!-- JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="assets/js/app.js"></script>
     </body>
 </html>
