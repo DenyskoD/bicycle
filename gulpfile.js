@@ -20,10 +20,10 @@ const browsersync = require("browser-sync").create();
 /* Paths */
 var path = {
     build: {
-        html: "dist/",
-        js: "dist/assets/js/",
-        css: "dist/assets/css/",
-        images: "dist/assets/img/"
+        html: "docs/",
+        js: "docs/assets/js/",
+        css: "docs/assets/css/",
+        images: "docs/assets/img/"
     },
     src: {
         html: "src/*.html",
@@ -37,7 +37,7 @@ var path = {
         css: "src/assets/sass/**/*.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
     },
-    clean: "./dist"
+    clean: "./docs"
 }
 
 
@@ -46,7 +46,7 @@ var path = {
 function browserSync(done) {
     browsersync.init({
         server: {
-            baseDir: "./dist/"
+            baseDir: "./docs/"
         },
         port: 3000
     });
